@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="game-area d-flex flex-column align-items-center w-100">
+            <header class="header text-white py-2 mb-4 text-center">
+                <h1>Predictor by Xeo</h1>
+            </header>
+            <div class="bomb-selector mb-4">
+                <div class="bomb-label text-center">NUMBER OF BOMBS:</div>
+                <div class="btn-group" role="group" id="bombSelector">
+                    <button type="button" class="btn btn-custom" data-bombs="3">3</button>
+                    <button type="button" class="btn btn-custom active" data-bombs="4">4</button>
+                    <button type="button" class="btn btn-custom" data-bombs="5">5</button>
+                    <button type="button" class="btn btn-custom" data-bombs="6">6</button>
+                    <button type="button" class="btn btn-custom" data-bombs="7">7</button>
+                </div>
+            </div>
+            <div class="game-field mb-4" id="gameField"></div>
+            <button class="btn signal-button mb-4" onclick="getSignal()">Get a signal</button>
+            <div class="game-info-container">
+                <div class="loader" id="loader"></div>
+                <div class="game-info text-center" id="gameInfo">
+                    <p>Chance of winning: <span id="winChance">0%</span></p>
+                    <p>Game hash: <span id="gameHash">N/A</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
