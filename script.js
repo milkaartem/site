@@ -97,7 +97,7 @@ function getSignal() {
         selectedSafeIndices.forEach(index => {
             cells[index].classList.add('safe');
             const diamondImg = document.createElement('img');
-            diamondImg.src = 'assets/diamondCenter.webp';
+            diamondImg.src = 'diamondCenter.webp';
             diamondImg.alt = 'Diamond';
             diamondImg.classList.add('diamond-icon');
             cells[index].appendChild(diamondImg);
