@@ -1,0 +1,160 @@
+body {
+    background-color: #090f1e;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+svg { 
+    cursor: pointer; 
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px;
+    margin: 10px 0;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+.info-block {
+    background-color: #151b2e;
+    padding: 10px;
+    border-radius: 8px;
+    width: calc(100% - 30px);
+    margin: 0 auto 10px auto;
+    font-family: "FS Elliot Pro", serif;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1rem;
+}
+
+/* Основные стили для info-block */
+.info-block {
+    background-color: #151b2e;
+    padding: 10px;
+    border-radius: 8px;
+    width: calc(100% - 30px);
+    margin: 0 auto 10px auto;
+    font-family: "Avenir LT Std", Avenir, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 900; /* Heavy weight */
+    font-size: 0.875rem; /* 14px */
+    line-height: 1rem;
+    letter-spacing: 0.5px; /* Добавил небольшой кернинг для лучшей читаемости */
+}
+
+/* Подключение шрифта Avenir LT Std */
+@font-face {
+    font-family: "Avenir LT Std";
+    src: url('fonts/AvenirLTStd-Heavy.woff2') format('woff2'),
+         url('fonts/AvenirLTStd-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap; /* Для оптимальной загрузки */
+}
+
+/* Альтернативные варианты подключения (если нужно) */
+@font-face {
+    font-family: "Avenir";
+    src: local("Avenir Heavy"), local("Avenir-Heavy"),
+         url('fonts/Avenir-Heavy.woff2') format('woff2');
+    font-weight: 900;
+}
+
+/* Переопределение отступов */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.chance-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #13f36c;
+}
+
+.hash-value {
+    font-size: 0.9rem;
+    color: #a0a8c0;
+    margin-top: 5px;
+    font-family: monospace;
+}
+
+.mines-title {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.mines-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.btn-mine {
+    background-color: #2d3748;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-mine.active {
+    background-color: #0d6efd;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
